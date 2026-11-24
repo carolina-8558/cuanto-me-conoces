@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Qué tanto me conoces?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+
+    <section id="inicio" class="pantalla">
+      <h1>¿Qué tanto me conoces?</h1>
+      <p>Responde 10 preguntas sobre mí y mira cuántas aciertas.</p>
+      <label for="nombre">¿Cómo te llamas?</label>
+      <input id="nombre" type="text" autocomplete="given-name" maxlength="30">
+      <button id="btn-empezar" class="principal" type="button">Empezar</button>
+    </section>
+
+    <section id="juego" class="pantalla" hidden>
+      <p id="progreso" class="progreso"></p>
+      <h2 id="pregunta"></h2>
+      <div id="opciones" class="opciones"></div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <button id="btn-siguiente" class="principal" type="button" hidden>Siguiente</button>
+    </section>
+
+    <section id="final" class="pantalla" hidden>
+      <h2 id="titulo-final"></h2>
+      <p class="marcador"><span id="correctas">0</span> correctas, <span id="incorrectas">0</span> incorrectas</p>
+      <button id="btn-reiniciar" class="principal" type="button">Jugar de nuevo</button>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
